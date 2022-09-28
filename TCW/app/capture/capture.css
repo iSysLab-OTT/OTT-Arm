@@ -1,0 +1,90 @@
+.videoArea {
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+    max-width: 700px;
+    object-fit: cover;
+  }
+  
+
+/* 임시 버튼 div */
+.btnArea{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.start{
+  z-index: 2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  width: 100px;
+  height: 50px;
+  background: #000000;
+  border-radius: 30px;
+}
+
+.stop{
+  z-index: 2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  width: 100px;
+  height: 50px;
+  background: #FF0000;
+  border-color: #FF0000;
+  border-radius: 30px;
+}
+
+.play{
+  z-index: 2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  width: 100px;
+  height: 50px;
+  background: #000000;
+  border-radius: 30px;
+}
+
+.download{
+  z-index: 2;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 48px;
+  color: white;
+  width: 100px;
+  height: 50px;
+  background: #FF0000;
+  border-color: #FF0000;
+  border-radius: 30px;
+}
+
+.wrapper{
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container{
+  display: flex;
+  width: 480px;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.video-item > video{
+  border: 2px solid black;
+  width: 480px;
+  height: 320px;
+  margin: 20px;
+}
