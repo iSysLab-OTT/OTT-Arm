@@ -1,6 +1,8 @@
 ## TCW (Test Capture Web)
 
-### Web-RTC 이용
+### 캡처 : Web-RTC 이용
+
+### IP주소 확인 : https://www.ipify.org/
 
 ### 캡처 기능은 계속 제작 중 이므로 난독화를 수행
 
