@@ -1,3 +1,11 @@
+/* header */
+#logoImage {
+  width: 64px;
+  height: 64px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
 .videoArea {
     display: flex;
     border: 2px solid rgb(0, 0, 0);
@@ -29,9 +37,10 @@
 
 .stop{
   z-index: 2;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 48px;
   color: white;
   width: 100px;
   height: 50px;
