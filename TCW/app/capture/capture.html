@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../index.css">
     <title>캡처</title>
 </head>
+
 <header>
     <a href="../index.html"><img id="logoImage" src="../img/isyslab.jpg"/></a>
 </header>
@@ -16,22 +17,25 @@
     <div class="video-container">
         <div class="video-item">
             <video autoplay muted id="preview"></video>
-            <video muted id="recording"></video>
+            <div id="recording" class="boxArea">
+                <div class="infoText">현재 페이지의 URL: <span id="webSrc" class="spanText"></span></div>
+                <div class="infoText">사용자의 에이전트: <span id="userAgent" class="spanText"></span></div>
+                <div class="infoText">사용자의 언어: <span id="systemLanguage" class="spanText"></span></div>
+                <div class="infoText">사용자의 IP: <span id="myip" class="spanText"></span></div>
+            </div>
         </div>
     </div>
     <div class="btnArea">
       <button class="start">녹화</button>&nbsp;&nbsp;&nbsp;
       <button class="stop">중지</button>&nbsp;&nbsp;&nbsp;
+      <!--<button class="play">파일 생성</button>&nbsp;&nbsp;&nbsp;-->
       <button class="play">파일 생성</button>&nbsp;&nbsp;&nbsp;
       <a class="download">다운로드</a>
   </div>
   </div>
 
-
-
-
-      <script src="capture.js"></script>
-
       <footer class="copyrightText">copyright © iSYSLab</footer>
+      <script src="capture.js"></script>
+      <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 </body>
 </html>

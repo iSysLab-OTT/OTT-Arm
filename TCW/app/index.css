@@ -1,3 +1,11 @@
+/* header */
+#logoImage {
+    width: 64px;
+    height: 64px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
 /* div area */
 #area {
     height: auto;

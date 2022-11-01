@@ -1,10 +1,3 @@
-/* header */
-#logoImage {
-  width: 64px;
-  height: 64px;
-  margin-left: 30px;
-  margin-top: 20px;
-}
 
 .videoArea {
     display: flex;
@@ -96,4 +89,23 @@
   width: 480px;
   height: 320px;
   margin: 20px;
+}
+
+/*div BoxArea*/
+.boxArea{
+  border: 2px solid black;
+  width: 480px;
+  height: 190px;
+  margin-left: 20px;
+}
+
+/*infoText*/
+.infoText{
+  margin-top: 10px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.spanText{
+  font-weight: 700;
+  color: #ff3e3e;
 }

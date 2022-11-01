@@ -1,128 +1,143 @@
-const _0x43663d = _0x493e;
-(function (_0x2801e7, _0x3d6675) {
-  const _0x376dc6 = _0x493e,
-    _0x5de8eb = _0x2801e7();
+const _0x4aea14 = _0x40f2;
+(function (_0x3291a0, _0x15b89c) {
+  const _0x53931c = _0x40f2,
+    _0x22c775 = _0x3291a0();
   while (!![]) {
     try {
-      const _0x3529bc =
-        (parseInt(_0x376dc6(0xaa)) / 0x1) * (parseInt(_0x376dc6(0xa2)) / 0x2) +
-        (-parseInt(_0x376dc6(0xa9)) / 0x3) * (parseInt(_0x376dc6(0xb4)) / 0x4) +
-        parseInt(_0x376dc6(0xb2)) / 0x5 +
-        (-parseInt(_0x376dc6(0xaf)) / 0x6) * (parseInt(_0x376dc6(0xb8)) / 0x7) +
-        (parseInt(_0x376dc6(0xb9)) / 0x8) * (parseInt(_0x376dc6(0xb5)) / 0x9) +
-        (-parseInt(_0x376dc6(0x9b)) / 0xa) *
-          (-parseInt(_0x376dc6(0xa7)) / 0xb) +
-        (-parseInt(_0x376dc6(0xb7)) / 0xc) * (parseInt(_0x376dc6(0xa1)) / 0xd);
-      if (_0x3529bc === _0x3d6675) break;
-      else _0x5de8eb['push'](_0x5de8eb['shift']());
-    } catch (_0x150c37) {
-      _0x5de8eb['push'](_0x5de8eb['shift']());
+      const _0x2b2a22 =
+        parseInt(_0x53931c(0x161)) / 0x1 +
+        parseInt(_0x53931c(0x149)) / 0x2 +
+        -parseInt(_0x53931c(0x150)) / 0x3 +
+        (parseInt(_0x53931c(0x155)) / 0x4) *
+          (parseInt(_0x53931c(0x168)) / 0x5) +
+        (parseInt(_0x53931c(0x165)) / 0x6) *
+          (parseInt(_0x53931c(0x153)) / 0x7) +
+        -parseInt(_0x53931c(0x14a)) / 0x8 +
+        (-parseInt(_0x53931c(0x14d)) / 0x9) *
+          (parseInt(_0x53931c(0x152)) / 0xa);
+      if (_0x2b2a22 === _0x15b89c) break;
+      else _0x22c775['push'](_0x22c775['shift']());
+    } catch (_0x4cc248) {
+      _0x22c775['push'](_0x22c775['shift']());
     }
   }
-})(_0x5bd5, 0x3ce42);
-const recordButton = document[_0x43663d(0xba)](_0x43663d(0xad)),
-  stopButton = document[_0x43663d(0xba)]('.stop'),
-  playButton = document[_0x43663d(0xba)](_0x43663d(0xa4)),
-  downloadButton = document['querySelector'](_0x43663d(0xb1)),
-  previewPlayer = document[_0x43663d(0xba)](_0x43663d(0x9f)),
-  recordingPlayer = document[_0x43663d(0xba)](_0x43663d(0xa8));
+})(_0x2add, 0x8c145);
+const recordButton = document[_0x4aea14(0x16a)](_0x4aea14(0x16b)),
+  stopButton = document[_0x4aea14(0x16a)](_0x4aea14(0x163)),
+  playButton = document[_0x4aea14(0x16a)](_0x4aea14(0x15d)),
+  downloadButton = document[_0x4aea14(0x16a)](_0x4aea14(0x15f)),
+  previewPlayer = document[_0x4aea14(0x16a)]('#preview'),
+  recordingPlayer = document[_0x4aea14(0x16a)]('#recording');
 let recorder,
   recordedChunks,
   fileName = new Date();
 function videoStart() {
-  const _0xb66489 = _0x43663d;
-  navigator[_0xb66489(0xae)]
-    [_0xb66489(0x98)]({ video: !![], audio: !![] })
-    [_0xb66489(0xab)]((_0x13c1b4) => {
-      const _0x2e9151 = _0xb66489;
-      (previewPlayer[_0x2e9151(0xbb)] = _0x13c1b4),
-        startRecording(previewPlayer[_0x2e9151(0xa5)]());
+  const _0x191b36 = _0x4aea14;
+  navigator['mediaDevices']
+    ['getDisplayMedia']({ video: !![], audio: !![] })
+    [_0x191b36(0x148)]((_0x5b7c49) => {
+      const _0x893ac = _0x191b36;
+      (previewPlayer['srcObject'] = _0x5b7c49),
+        startRecording(previewPlayer[_0x893ac(0x14e)]());
     });
 }
-function startRecording(_0xd56556) {
-  const _0x288328 = _0x43663d;
+function startRecording(_0x5d0db0) {
+  const _0x424395 = _0x4aea14;
   (recordedChunks = []),
-    (recorder = new MediaRecorder(_0xd56556)),
-    (recorder[_0x288328(0xac)] = (_0x4038dc) => {
-      const _0x6113ed = _0x288328;
-      recordedChunks[_0x6113ed(0x9d)](_0x4038dc['data']);
+    (recorder = new MediaRecorder(_0x5d0db0)),
+    (recorder['ondataavailable'] = (_0x517f61) => {
+      const _0x3c3d8e = _0x40f2;
+      recordedChunks[_0x3c3d8e(0x157)](_0x517f61[_0x3c3d8e(0x162)]);
     }),
-    recorder[_0x288328(0xb3)]();
+    recorder[_0x424395(0x160)](),
+    (document[_0x424395(0x15e)](_0x424395(0x159))[_0x424395(0x156)] =
+      window[_0x424395(0x16c)][_0x424395(0x14c)]),
+    (document[_0x424395(0x15e)](_0x424395(0x154))['textContent'] =
+      window[_0x424395(0x15a)][_0x424395(0x154)]),
+    (document[_0x424395(0x15e)](_0x424395(0x151))['textContent'] =
+      window[_0x424395(0x15a)][_0x424395(0x15b)]);
 }
 function stopRecording() {
-  const _0x42eb6f = _0x43663d;
-  previewPlayer[_0x42eb6f(0xbb)]
-    ['getTracks']()
-    [_0x42eb6f(0xa0)]((_0x37f17d) => _0x37f17d[_0x42eb6f(0xa6)]()),
-    recorder[_0x42eb6f(0xa6)]();
-}
-function _0x5bd5() {
-  const _0x1ae1b3 = [
-    '.start',
-    'mediaDevices',
-    '2412AavWdy',
-    'video/webm',
-    '.download',
-    '2279020jrScRq',
-    'start',
-    '244BEyjIs',
-    '1650267BMYxTG',
-    'addEventListener',
-    '228JHWICL',
-    '7189plclPf',
-    '8nxWMbB',
-    'querySelector',
-    'srcObject',
-    'download',
-    'click',
-    'getDisplayMedia',
-    'toLocaleTimeString',
-    '.webm',
-    '38960sYuwuz',
-    'src',
-    'push',
-    'createObjectURL',
-    '#preview',
-    'forEach',
-    '188799BQVLEz',
-    '2NGAvVk',
-    'href',
-    '.play',
-    'captureStream',
-    'stop',
-    '275rcCnkM',
-    '#recording',
-    '1506bNoVdY',
-    '232256kagcJe',
-    'then',
-    'ondataavailable',
-  ];
-  _0x5bd5 = function () {
-    return _0x1ae1b3;
-  };
-  return _0x5bd5();
+  const _0x15dea5 = _0x4aea14;
+  previewPlayer[_0x15dea5(0x16f)]
+    [_0x15dea5(0x147)]()
+    [_0x15dea5(0x167)]((_0x5c1199) => _0x5c1199[_0x15dea5(0x164)]()),
+    recorder[_0x15dea5(0x164)]();
 }
 function playRecording() {
-  const _0x358c08 = _0x43663d,
-    _0x302d74 = new Blob(recordedChunks, { type: _0x358c08(0xb0) });
-  (recordingPlayer[_0x358c08(0x9c)] = URL[_0x358c08(0x9e)](_0x302d74)),
-    recordingPlayer['play'](),
-    (downloadButton[_0x358c08(0xa3)] = recordingPlayer['src']),
-    (downloadButton[_0x358c08(0xbc)] =
-      'isyslab-' + fileName[_0x358c08(0x99)]() + _0x358c08(0x9a)),
-    console['log'](recordingPlayer['src']);
+  const _0x532469 = _0x4aea14,
+    _0x2d8824 = new Blob(recordedChunks, { type: _0x532469(0x166) });
+  (recordingPlayer[_0x532469(0x16e)] = URL[_0x532469(0x170)](_0x2d8824)),
+    (downloadButton['href'] = recordingPlayer[_0x532469(0x16e)]),
+    (downloadButton[_0x532469(0x15c)] =
+      _0x532469(0x169) + fileName['toLocaleTimeString']() + '.webm'),
+    console[_0x532469(0x16d)](recordingPlayer[_0x532469(0x16e)]);
 }
-function _0x493e(_0x2387c9, _0x53cac2) {
-  const _0x5bd519 = _0x5bd5();
+recordButton[_0x4aea14(0x14b)](_0x4aea14(0x14f), videoStart),
+  stopButton['addEventListener']('click', stopRecording),
+  playButton[_0x4aea14(0x14b)](_0x4aea14(0x14f), playRecording);
+function _0x2add() {
+  const _0x1e55bc = [
+    '806730iZsZBr',
+    'systemLanguage',
+    '55010NLrUak',
+    '7grCpix',
+    'userAgent',
+    '4PRXSFG',
+    'textContent',
+    'push',
+    'innerHTML',
+    'webSrc',
+    'navigator',
+    'language',
+    'download',
+    '.play',
+    'getElementById',
+    '.download',
+    'start',
+    '506787uqDpRc',
+    'data',
+    '.stop',
+    'stop',
+    '3216018npihJm',
+    'video/webm',
+    'forEach',
+    '3341545lHGMqf',
+    'isyslab-',
+    'querySelector',
+    '.start',
+    'location',
+    'log',
+    'src',
+    'srcObject',
+    'createObjectURL',
+    'getTracks',
+    'then',
+    '164962DVyryH',
+    '697984bXDEXq',
+    'addEventListener',
+    'href',
+    '1413DRuXNV',
+    'captureStream',
+    'click',
+  ];
+  _0x2add = function () {
+    return _0x1e55bc;
+  };
+  return _0x2add();
+}
+function _0x40f2(_0x35f3d1, _0x3a6fe3) {
+  const _0x2added = _0x2add();
   return (
-    (_0x493e = function (_0x493ea5, _0x104a27) {
-      _0x493ea5 = _0x493ea5 - 0x97;
-      let _0x4a6f99 = _0x5bd519[_0x493ea5];
-      return _0x4a6f99;
+    (_0x40f2 = function (_0x40f294, _0x59b61d) {
+      _0x40f294 = _0x40f294 - 0x147;
+      let _0x3ea68c = _0x2added[_0x40f294];
+      return _0x3ea68c;
     }),
-    _0x493e(_0x2387c9, _0x53cac2)
+    _0x40f2(_0x35f3d1, _0x3a6fe3)
   );
 }
-recordButton[_0x43663d(0xb6)]('click', videoStart),
-  stopButton[_0x43663d(0xb6)](_0x43663d(0x97), stopRecording),
-  playButton['addEventListener'](_0x43663d(0x97), playRecording);
+function getIP(_0x360880) {
+  const _0x1e4ec6 = _0x4aea14;
+  document[_0x1e4ec6(0x15e)]('myip')[_0x1e4ec6(0x158)] = _0x360880['ip'];
+}
