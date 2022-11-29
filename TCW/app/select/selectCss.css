@@ -1,0 +1,35 @@
+/* 카드 div area */
+.selectCardArea {
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+.selectCard {
+    float: left;
+    width: 240px;
+    height: 150px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-left: 120px;
+    z-index: 2;
+}
+
+.selectBtn {
+    left: 50%;
+    top: 82.5%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.imgSrc {
+    width:50%;
+    display: block;
+    margin: auto;
+}
